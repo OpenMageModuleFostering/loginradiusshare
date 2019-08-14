@@ -47,38 +47,11 @@ class Loginradius_Sharing_Model_System_Config_Info extends Mage_Adminhtml_Block_
     {
         ?>
         <fieldset class="lr_admin_configuration_info_fieldsets lr_configuration_info_fieldsets_left" id="lr_thank_message_container">
-            <h4 class="lr_admin_fieldset_title"><strong><?php echo $this->__('Thank you for installing LoginRadius Extension!') ?></strong></h4>
+            <h4 class="lr_admin_fieldset_title"><strong><?php echo $this->__('Thank you for installing Social9.com social sharing Extension!') ?></strong></h4>
 
             <p>
-                <a href="https://www.loginradius.com/">LoginRadius</a> provides <a href="http://ish.re/9RZM" target="_blank"> Social Login</a>,
-                <a href="http://ish.re/9RZO" target="_blank">Social Share</a>,
-                <a href="http://ish.re/HNIA" target="_blank">Social Invite</a>,
-                <a href="http://ish.re/83Y8" target="_blank">User Social Profile Data</a>,
-                <a href="http://ish.re/9RZS" target="_blank">Single Sign-On</a>,
-                <a href="http://ish.re/AQ5L" target="_blank">Social Engagement Analytics</a>
-                as single Unified API.
+                Social9 provides Social Sharing solutions to your Magento website. We also offer Social Plugins for <a href="http://ish.re/RPLD" target="_blank">Wordpress</a>, <a href="http://ish.re/RPME" target="_blank">Drupal</a>, <a href="http://ish.re/RPMR" target="_blank">Joomla</a>, <a href="http://ish.re/RPN0" target="_blank">Zen-Cart</a>, <a href="http://ish.re/RPMW" target="_blank">Expression Engine</a> and <a href="http://ish.re/RPMS" target="_blank">Typo3</a>! Please visit <a href="http://www.social9.com" target="blank">www.social9.com</a> for more info.
             </p>
-
-            <p>
-                <?php echo $this->__('We also offer Social Plugins for') ?>
-                <a href="http://ish.re/ADDT" target="_blank">Wordpress</a>,
-                <a href="http://ish.re/8PE6" target="_blank">Joomla</a>,
-                <a href="http://ish.re/8PE9" target="_blank">Drupal</a>,
-                <a href="http://ish.re/8PED" target="_blank">vBulletin</a>,
-                <a href="http://ish.re/8PEE" target="_blank">VanillaForum</a>,
-                <a href="http://ish.re/8PEG" target="_blank">osCommerce</a>,
-                <a href="http://ish.re/8PEH" target="_blank">PrestaShop</a>,
-                <a href="http://ish.re/8PFQ" target="_blank">X-Cart</a>,
-                <a href="http://ish.re/8PFR" target="_blank">Zen-Cart</a>,
-                <a href="http://ish.re/8PFS" target="_blank">DotNetNuke</a>,
-                <a href="http://ish.re/8PFT" target="_blank">SMF</a><?php echo $this->__('and') ?>
-                <a href="http://ish.re/8PFV" target="_blank">phpBB</a> !
-            </p>
-            </br>
-            <div style="margin-top:10px">
-                    <input class="form-button" type="button" onclick="window.open('https://www.loginradius.com')" value="<?php echo $this->__('Set up LoginRadius account!') ?>"/>
-                <a class="loginRadiusHow" target="_blank" href="http://ish.re/ATM4">(<?php echo $this->__('How to set up an account?') ?>)</a>
-            </div>
         </fieldset>
     <?php
     }
@@ -93,27 +66,11 @@ class Loginradius_Sharing_Model_System_Config_Info extends Mage_Adminhtml_Block_
             <h4 class="lr_admin_fieldset_title"><strong><?php echo $this->__('Extension Information!') ?></strong></h4>
 
             <div style="margin:5px 0">
-                <strong>Version: </strong>2.1.0 <br/>
-                <strong>Author:</strong> LoginRadius<br/>
-                <strong>Website:</strong> <a href="https://www.loginradius.com" target="_blank">www.loginradius.com</a>
+                <strong>Version: </strong>2.5.0 <br/>
+                <strong>Author:</strong> Social9 Team<br/>
+                <strong>Website:</strong> <a href="https://www.social9.com" target="_blank">www.social9.com</a>
                 <br/>
-                <strong>Community:</strong> <a href="http://community.loginradius.com" target="_blank">community.loginradius.com</a>
-                <br/>
-
-                <div id="sociallogin_get_update" style="float:left;">To receive updates on new features, releases, etc. Please connect to one of our social media pages
-                </div>
-                <div id="lr_media_pages_container">
-                    <a target="_blank" href="https://www.facebook.com/loginradius"><img
-                            src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_SKIN) . 'adminhtml/default/default/Loginradius/Sharing/images/media-pages/facebook.png'; ?>"></a>
-                    <a target="_blank" href="https://twitter.com/LoginRadius"><img
-                            src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_SKIN) . 'adminhtml/default/default/Loginradius/Sharing/images/media-pages/twitter.png'; ?>"></a>
-                    <a target="_blank" href="https://plus.google.com/+Loginradius"> <img
-                            src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_SKIN) . 'adminhtml/default/default/Loginradius/Sharing/images/media-pages/google.png'; ?>"></a>
-                    <a target="_blank" href="http://www.linkedin.com/company/loginradius"> <img
-                            src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_SKIN) . 'adminhtml/default/default/Loginradius/Sharing/images/media-pages/linkedin.png'; ?>"></a>
-                    <a target="_blank" href="https://www.youtube.com/user/LoginRadius"> <img
-                            src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_SKIN) . 'adminhtml/default/default/Loginradius/Sharing/images/media-pages/youtube.png'; ?>"></a>
-                </div>
+                <div id="sociallogin_get_update" style="float:left;">To receive updates on new features, releases, etc. </div>
             </div>
         </fieldset>
     <?php
@@ -127,7 +84,7 @@ class Loginradius_Sharing_Model_System_Config_Info extends Mage_Adminhtml_Block_
         ?>
         <script type="text/javascript">var islrsharing = true;
             var islrsocialcounter = true;</script>
-        <script type="text/javascript" src="//share.loginradius.com/Content/js/LoginRadius.js" id="lrsharescript"></script>
+        <script type="text/javascript" src="//sharecdn.social9.com/v1/social9.min.js" id="lrsharescript"></script>
         <script type="text/javascript">
             window.onload = function () {
                 var sharingType = ['horizontal', 'vertical'];

@@ -50,15 +50,8 @@ class Loginradius_Sharing_Block_Help extends Mage_Adminhtml_Block_System_Config_
      */
     protected function _getFieldHtml($element)
     {
-        $content = '<tr>
-            <td><a target="_blank" href="http://ish.re/9WBZ">Extension Installation, Configuration and Troubleshooting</a></td>
-            <td><a target="_blank" href="http://ish.re/AEFD">How to get LoginRadius API Key</a></td></tr>
-            <tr><td><a target="_blank" href="http://ish.re/9WBZ">Magento Multisite Feature</a></td>
-            <td><a target="_blank" href="http://ish.re/5P2D">LoginRadius Products</a></td></tr>
-            <tr><td><a target="_blank" href="http://ish.re/8PJ7">About LoginRadius</a></td>
-            <td><a target="_blank" href="http://ish.re/8PFR">Social Plugins</a></td></tr>
-            <tr><td><a target="_blank" href="http://ish.re/C9F7">Social SDKs</a></td></tr>';
-
-        return $content;
+        return '<tr><td><a href="http://ish.re/RPMU" target="_blank">Extension Installation, Configuration and Troubleshooting</a></td></tr>
+            <tr><td><a href="http://ish.re/ROSR" target="_blank">Advance Feature</a></td></tr>
+            <tr><td><a href="http://ish.re/ROVE" target="_blank">Social Plugins</a></td></tr>';
     }
 }

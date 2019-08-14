@@ -34,14 +34,6 @@ class Loginradius_Sharing_Block_Sharing extends Mage_Core_Block_Template
     }
 
     /**
-     * @return LoginRadius API Key
-     */
-    public function getApikey()
-    {
-        return Mage::getStoreConfig('sharing_options/messages/appid');
-    }
-
-    /**
      * Get title for social sharing container!
      *
      * @return string
@@ -110,7 +102,7 @@ class Loginradius_Sharing_Block_Sharing extends Mage_Core_Block_Template
     /**
      * function returns script required for vertical sharing.
      */
-    public function getVerticalSharingScript($loginRadiusSettings, $apiKey)
+    public function getVerticalSharingScript($loginRadiusSettings)
     {
         $size = '';
         $sharingScript = '';
@@ -186,9 +178,6 @@ class Loginradius_Sharing_Block_Sharing extends Mage_Core_Block_Template
             $providers = self:: getSharingProviders('vertical', $loginRadiusSettings);
             // prepare sharing script
             $sharingScript .= 'LoginRadius.util.ready( function() { $i = $SS.Interface.' . $interface . '; $SS.Providers.Top = ["' . $providers . '"]; $u = LoginRadius.user_settings;';
-            if (isset($apiKey) && !empty($apiKey)) {
-                $sharingScript .= '$u.apikey= \'' . trim($apiKey) . '\';';
-            }
             $sharingScript .= '$i.size = ' . $size . '; ' . $offset . ' if(typeof document.getElementsByName("viewport")[0] != "undefined"){$u.isMobileFriendly=true;}; $i.show( "loginRadiusVerticalSharing" ); } );';
         }
 
@@ -256,7 +245,7 @@ class Loginradius_Sharing_Block_Sharing extends Mage_Core_Block_Template
     /**
      * function returns script required for horizontal sharing.
      */
-    public function getHorizontalSharingScript($loginRadiusSettings, $apikey)
+    public function getHorizontalSharingScript($loginRadiusSettings)
     {
         $size = '';
         $sharingScript = '';
@@ -315,9 +304,6 @@ class Loginradius_Sharing_Block_Sharing extends Mage_Core_Block_Template
 
             // prepare sharing script
             $sharingScript .= 'LoginRadius.util.ready( function() { $i = $SS.Interface.' . $interface . '; $SS.Providers.Top = ["' . $providers . '"]; $u = LoginRadius.user_settings;';
-            if (isset($apikey) && !empty($apikey)) {
-                $sharingScript .= '$u.apikey= \'' . trim($apikey) . '\';';
-            }
             $sharingScript .= '$i.size = ' . $size . '; $u.sharecounttype="url";  if(typeof document.getElementsByName("viewport")[0] != "undefined"){$u.isMobileFriendly=true;}; $i.show( "loginRadiusHorizontalSharing" ); } );';
         }
 

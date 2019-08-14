@@ -2,7 +2,7 @@
 <config>
     <tabs>
         <socialconfig translate="label" module="sharing">
-            <label>Login Radius</label>
+            <label>Social9</label>
             <sort_order>1</sort_order>
         </socialconfig>
     </tabs>
@@ -23,25 +23,6 @@
                     <show_in_website>1</show_in_website>
                     <show_in_store>1</show_in_store>
                 </info>
-                <messages translate="label">
-                    <label>Basic Social Sharing Settings</label>
-                    <frontend_type>text</frontend_type>
-                    <sort_order>1</sort_order>
-                    <show_in_default>1</show_in_default>
-                    <show_in_website>1</show_in_website>
-                    <show_in_store>1</show_in_store>
-                    <fields>
-                        <appid translate="label">
-                            <label>LoginRadius API Key</label>
-                            <frontend_type>text</frontend_type>
-                            <comment><![CDATA[You can leave it blank if you are Free Customer of LoginRadius and if you are paid customer then fill it to get the Advanced sharing features.]]></comment>
-                            <sort_order>15</sort_order>
-                            <show_in_default>1</show_in_default>
-                            <show_in_website>1</show_in_website>
-                            <show_in_store>1</show_in_store>
-                        </appid>
-                    </fields>
-                </messages>
                 <horizontalSharing translate="label">
                     <label>Horizontal Social Sharing</label>
                     <frontend_type>text</frontend_type>

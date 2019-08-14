@@ -135,9 +135,9 @@ loginradius_radio {
 }
 
 #lr_thank_message_container {
-    width: 60%;
+    width: 65%;
     float: left;
-    height: 195px;
+    height: 99px;
     Margin-right: 6px;
 }
 
