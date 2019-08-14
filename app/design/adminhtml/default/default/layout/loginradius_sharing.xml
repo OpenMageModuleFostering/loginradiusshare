@@ -2,10 +2,10 @@
 <layout version="1.0.0">
     <default>
 		<reference name="head">
-        	<action method="addJs"><script>../skin/frontend/base/default/Loginradius/Sharing/js/jquery.js</script></action>
-			<action method="addJs"><script>../skin/frontend/base/default/Loginradius/Sharing/js/jquery.ui.sortable.min.js</script></action>
-			<action method="addJs"><script>../skin/frontend/base/default/Loginradius/Sharing/js/admin-ui.js</script></action>
-        	<action method="addCss"><script>../../../frontend/base/default/Loginradius/Sharing/css/admin-ui.css</script></action>
+        	<action method="addJs"><script>../skin/adminhtml/default/default/Loginradius/Sharing/js/jquery.js</script></action>
+			<action method="addJs"><script>../skin/adminhtml/default/default/Loginradius/Sharing/js/jquery.ui.sortable.min.js</script></action>
+			<action method="addJs"><script>../skin/adminhtml/default/default/Loginradius/Sharing/js/admin-ui.js</script></action>
+        	<action method="addCss"><script>../../../adminhtml/default/default/Loginradius/Sharing/css/admin-ui.css</script></action>
 		</reference>
 	</default>
-</layout> 
+</layout>
