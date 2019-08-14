@@ -77,26 +77,34 @@ function loginRadiusSharingPrepareAdminUI(){
 				var loginRadiusSharingProviderArray = loginRadiusSharingProvidersHidden.split(',');
 				if(sharingModes[jj] == 'Sharing'){
 					for(var i = 0; i < loginRadiusSharingProviderArray.length; i++){
+                                            if(document.getElementById(sharingType[j]+"_"+sharingModes[jj]+"_"+loginRadiusSharingProviderArray[i])){
 						document.getElementById(sharingType[j]+"_"+sharingModes[jj]+"_"+loginRadiusSharingProviderArray[i]).checked = true;
 						loginRadiusSharingShowIcon(true, document.getElementById(sharingType[j]+"_"+sharingModes[jj]+"_"+loginRadiusSharingProviderArray[i]), sharingType[j]);
+                                            }
 					}
 				}else{
 					for(var i = 0; i < loginRadiusSharingProviderArray.length; i++){
+                                            if(document.getElementById(sharingType[j]+"_"+sharingModes[jj]+"_"+loginRadiusSharingProviderArray[i])){
 						document.getElementById(sharingType[j]+"_"+sharingModes[jj]+"_"+loginRadiusSharingProviderArray[i]).checked = true;
+                                            }
 					}
 				}
 			}else{
 				if(sharingModes[jj] == 'Sharing'){
 					var loginRadiusSharingProviderArray = ["Facebook", "GooglePlus", "Twitter", "Pinterest", "Email", "Print"];
 					for(var i = 0; i < loginRadiusSharingProviderArray.length; i++){
+                                            if(document.getElementById(sharingType[j]+"_"+sharingModes[jj]+"_"+loginRadiusSharingProviderArray[i])){
 						document.getElementById(sharingType[j]+"_"+sharingModes[jj]+"_"+loginRadiusSharingProviderArray[i]).checked = true;
 						loginRadiusSharingShowIcon(true, document.getElementById(sharingType[j]+"_"+sharingModes[jj]+"_"+loginRadiusSharingProviderArray[i]), sharingType[j], true);
+                                            }
 					}
 				}else{
 					var loginRadiusSharingProviderArray = ["Facebook Like", "Google+ +1", "Twitter Tweet", "Pinterest Pin it", "Hybridshare"];
 					for(var i = 0; i < loginRadiusSharingProviderArray.length; i++){
+                                            if(document.getElementById(sharingType[j]+"_"+sharingModes[jj]+"_"+loginRadiusSharingProviderArray[i])){
 						document.getElementById(sharingType[j]+"_"+sharingModes[jj]+"_"+loginRadiusSharingProviderArray[i]).checked = true;
 						loginRadiusSharingPopulateCounter(document.getElementById(sharingType[j]+"_"+sharingModes[jj]+"_"+loginRadiusSharingProviderArray[i]), sharingType[j]);
+                                            }
 					}
 				}
 			}
@@ -136,7 +144,8 @@ function loginRadiusSharingSharingLimit(elem, sharingType){
 function loginRadiusSharingPopulateCounter(elem, sharingType, lrDefault){
 	// get providers hidden field value
 	var providers = document.getElementById('sharing_options_'+sharingType+'Sharing_'+sharingType+'CounterProvidersHidden');
-	if(elem.checked){
+        if(elem.value != 1){
+    if(elem.checked){
 		// add selected providers in the hiddem field value
 		if(typeof elem.checked != "undefined" || lrDefault == true){
 			if(providers.value == ""){
@@ -156,60 +165,108 @@ function loginRadiusSharingPopulateCounter(elem, sharingType, lrDefault){
 			}
 		}
 	}
+    }
 }
 // show selected providers in rearrange option
 function loginRadiusSharingShowIcon(pageRefresh, elem, sharingType, lrDefault){
 	loginRadiusSharingSharingLimit(elem, sharingType);
 	// get providers hidden field value
 	var providers = document.getElementById('sharing_options_'+sharingType+'Sharing_'+sharingType+'SharingProvidersHidden');
-	if(elem.checked){
-		// get reference to "rearrange providers" <ul> element
-		var ul = document.getElementById('loginRadius'+sharingType+'RearrangeSharing');
-		// if <ul> is not already created
-		if(ul == null){
-			// create <ul> element
-			var ul = document.createElement('ul');
-			ul.setAttribute('id', 'loginRadius'+sharingType+'RearrangeSharing');
-			$loginRadiusSharingJquery(ul).sortable({
-				update: function(e, ui) {
-					var val = $loginRadiusSharingJquery(this).children().map(function() {
-						return $loginRadiusSharingJquery(this).attr('title');
-					}).get().join();
-					$loginRadiusSharingJquery(providers).val(val);
-				},
-			revert: true});
-		}
-		// create list items
-		var listItem = document.createElement('li');
-		listItem.setAttribute('id', 'loginRadius'+sharingType+'LI'+elem.value);
-		listItem.setAttribute('title', elem.value);
-		listItem.setAttribute('class', 'lrshare_iconsprite32 lrshare_'+elem.value.toLowerCase());
-		ul.appendChild(listItem);
-		// add selected providers in the hiddem field value
-		if(!pageRefresh || lrDefault == true){
-			if(providers.value == ""){
-				providers.value = elem.value;
-			}else{
-				providers.value += ","+elem.value;
-			}
-		}
-		// append <ul> to the <td>
-		var rearrangeRow = document.getElementById('row_sharing_options_'+sharingType+'Sharing_'+sharingType+'SharingProvidersHidden');
-		var rearrangeTd = rearrangeRow.getElementsByTagName('td');
-		rearrangeTd[1].appendChild(ul);
-	}else{
-		var remove = document.getElementById('loginRadius'+sharingType+'LI'+elem.value);
-		if(remove){
-			remove.parentNode.removeChild(remove);
-		}
-		if(providers.value.indexOf(',') == -1){
-			providers.value = providers.value.replace(elem.value, ""); 
-		}else{
-			if(providers.value.indexOf(","+elem.value) == -1){
-				providers.value = providers.value.replace(elem.value+",", "");
-			}else{
-				providers.value = providers.value.replace(","+elem.value, "");
-			}
-		}
-	}
+        if(elem.value != 1){
+            if(elem.checked){
+                    // get reference to "rearrange providers" <ul> element
+                    var ul = document.getElementById('loginRadius'+sharingType+'RearrangeSharing');
+                    // if <ul> is not already created
+                    if(ul == null){
+                            // create <ul> element
+                            var ul = document.createElement('ul');
+                            ul.setAttribute('id', 'loginRadius'+sharingType+'RearrangeSharing');
+                            $loginRadiusSharingJquery(ul).sortable({
+                                    update: function(e, ui) {
+                                            var val = $loginRadiusSharingJquery(this).children().map(function() {
+                                                    return $loginRadiusSharingJquery(this).attr('title');
+                                            }).get().join();
+                                            $loginRadiusSharingJquery(providers).val(val);
+                                    },
+                            revert: true});
+                    }
+                    // create list items
+                    var listItem = document.createElement('li');
+                    listItem.setAttribute('id', 'loginRadius'+sharingType+'LI'+elem.value);
+                    listItem.setAttribute('title', elem.value);
+                    listItem.setAttribute('class', 'lrshare_iconsprite32 lrshare_'+elem.value.toLowerCase());
+                    ul.appendChild(listItem);
+                    // add selected providers in the hiddem field value
+                    if(!pageRefresh || lrDefault == true){
+                            if(providers.value == ""){
+                                    providers.value = elem.value;
+                            }else{
+                                    providers.value += ","+elem.value;
+                            }
+                    }
+                    // append <ul> to the <td>
+                    var rearrangeRow = document.getElementById('row_sharing_options_'+sharingType+'Sharing_'+sharingType+'SharingProvidersHidden');
+                    var rearrangeTd = rearrangeRow.getElementsByTagName('td');
+                    rearrangeTd[1].appendChild(ul);
+            }else{
+                    var remove = document.getElementById('loginRadius'+sharingType+'LI'+elem.value);
+                    if(remove){
+                            remove.parentNode.removeChild(remove);
+                    }
+                    if(providers.value.indexOf(',') == -1){
+                            providers.value = providers.value.replace(elem.value, ""); 
+                    }else{
+                            if(providers.value.indexOf(","+elem.value) == -1){
+                                    providers.value = providers.value.replace(elem.value+",", "");
+                            }else{
+                                    providers.value = providers.value.replace(","+elem.value, "");
+                            }
+                    }
+            }
+        }
 }
+
+function loginradiusChangeInheritCheckbox(shareId1,shareId2){
+    if($loginRadiusSharingJquery("#sharing_options_"+shareId1+"_"+shareId2+"Providers_inherit").is(':checked')){
+        $loginRadiusSharingJquery("#sharing_options_"+shareId1+"_"+shareId2+"ProvidersHidden_inherit").attr('checked',true);
+        $loginRadiusSharingJquery("#sharing_options_"+shareId1+"_"+shareId2+"ProvidersHidden").attr("disabled", true);
+    }else{
+        $loginRadiusSharingJquery("#sharing_options_"+shareId1+"_"+shareId2+"ProvidersHidden_inherit").attr('checked',false);
+        $loginRadiusSharingJquery("#sharing_options_"+shareId1+"_"+shareId2+"ProvidersHidden").attr("disabled", false);
+    }
+}
+
+function loginradiusChangeInheritCheckboxHidden(shareId1,shareId2){
+    if($loginRadiusSharingJquery("#sharing_options_"+shareId1+"_"+shareId2+"ProvidersHidden_inherit").is(':checked')){
+        $loginRadiusSharingJquery("#sharing_options_"+shareId1+"_"+shareId2+"Providers_inherit").attr('checked',true);
+        $loginRadiusSharingJquery("#sharing_options_"+shareId1+"_"+shareId2+"ProvidersHidden").attr("disabled", true);
+    }else{
+        $loginRadiusSharingJquery("#sharing_options_"+shareId1+"_"+shareId2+"Providers_inherit").attr('checked',false);
+        $loginRadiusSharingJquery("#sharing_options_"+shareId1+"_"+shareId2+"ProvidersHidden").attr("disabled", false);
+    }
+}
+
+$loginRadiusSharingJquery(document).ready(function(){
+    loginradiusChangeInheritCheckboxHidden('horizontalSharing','horizontalCounter');
+    loginradiusChangeInheritCheckboxHidden('verticalSharing','verticalCounter');
+    loginradiusChangeInheritCheckboxHidden('horizontalSharing','horizontalSharing');
+    loginradiusChangeInheritCheckboxHidden('verticalSharing','verticalSharing');
+    $loginRadiusSharingJquery("#sharing_options_horizontalSharing_horizontalCounterProviders_inherit").click(function(){
+        loginradiusChangeInheritCheckbox('horizontalSharing','horizontalCounter');
+    });
+    $loginRadiusSharingJquery("#sharing_options_verticalSharing_verticalCounterProviders_inherit").click(function(){
+        loginradiusChangeInheritCheckbox('verticalSharing','verticalCounter');
+    });
+    $loginRadiusSharingJquery("#sharing_options_horizontalSharing_horizontalSharingProviders_inherit").click(function(){
+        loginradiusChangeInheritCheckbox('horizontalSharing','horizontalSharing');
+    });
+    $loginRadiusSharingJquery("#sharing_options_verticalSharing_verticalSharingProviders_inherit").click(function(){
+        loginradiusChangeInheritCheckbox('verticalSharing','verticalSharing');
+    });
+    $loginRadiusSharingJquery("#sharing_options_horizontalSharing_horizontalSharingProvidersHidden_inherit").click(function(){
+        loginradiusChangeInheritCheckboxHidden('horizontalSharing','horizontalSharing');
+    });
+    $loginRadiusSharingJquery("#sharing_options_verticalSharing_verticalSharingProvidersHidden_inherit").click(function(){
+        loginradiusChangeInheritCheckboxHidden('verticalSharing','verticalSharing');
+    });
+});

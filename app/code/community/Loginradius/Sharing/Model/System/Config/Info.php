@@ -16,11 +16,38 @@ class Loginradius_Sharing_Model_System_Config_Info extends Mage_Adminhtml_Block_
 		<fieldset class="loginRadiusFieldset" style="margin-right:13px; background-color:#EAF7FF; border-color:rgb(195, 239, 250); padding-bottom:25px; width:65%; height: 173px">
 		<h4 style="color:#000"><strong>Thank you for installing LoginRadius Simplified Social Share extension!</strong></h4>
 		<p>
-			<a href="https://www.loginradius.com/">LoginRadius</a> provides <a target="_blank" href="https://www.loginradius.com/loginradius/product-overview#SocialLoginTab">Social Login</a>, <a target="_blank" href="https://www.loginradius.com/loginradius/product-overview#SocialSharingTab">Social Share</a>, <a target="_blank" href="https://www.loginradius.com/loginradius/product-overview#FriendsInviteTab">Friend Invite</a>, <a target="_blank" href="https://www.loginradius.com/loginradius/product-overview#UserProfileDataTab">User Social Profile Data</a>, <a target="_blank" href="https://www.loginradius.com/loginradius/product-overview#OnlineTab">User Profile Access</a>, <a target="_blank" href="https://www.loginradius.com/loginradius/product-overview#SingleSignOnTab">Single Sign-on</a> and <a target="_blank" href="https://www.loginradius.com/loginradius/product-overview#SocialAnalyticsTab">Social Analytics</a> as single Unified API.
+			<a href="https://www.loginradius.com/">LoginRadius</a> <a href="http://ish.re/9RZM" target="_blank">Social Login</a>,
+                        <a href="http://ish.re/9RZO" target="_blank">Social Share</a>,
+                        <a href="http://ish.re/9RZQ" target="_blank">Social Invite</a>,
+                        <a href="http://ish.re/83Y8" target="_blank">User Social Profile Data</a>,
+                        <a href="http://ish.re/83Y8" target="_blank">User Profile Access</a>,
+                        <a href="http://ish.re/9RZS" target="_blank">Single Sign-On</a>,
+                        <a href="http://ish.re/AQ5L" target="_blank">Social Engagement  Analytics</a>
+                        as single Unified API.
 		</p>
 		<p>
-			We also have ready to use plugins for <a href="https://www.loginradius.com/loginradius-for-developers/loginRadius-cms#wordpressplugin" target="_blank">Wordpress</a>, <a href="https://www.loginradius.com/loginradius-for-developers/loginRadius-cms#joomlaextension" target="_blank">Joomla</a>, <a href="https://www.loginradius.com/loginradius-for-developers/loginRadius-cms#drupalmodule" target="_blank">Drupal</a>, <a href="https://www.loginradius.com/loginradius-for-developers/loginRadius-cms#vBulletinplugin" target="_blank">vBulletin</a>, <a href="https://www.loginradius.com/loginradius-for-developers/loginRadius-cms#vanillaaddons" target="_blank">VanillaForum</a>, <a href="https://www.loginradius.com/loginradius-for-developers/loginRadius-cms#osCommerceaddons" target="_blank">OSCommerce</a>, <a href="https://www.loginradius.com/loginradius-for-developers/loginRadius-cms#prestashopmodule" target="_blank">PrestaShop</a>, <a href="https://www.loginradius.com/loginradius-for-developers/loginRadius-cms#xcartextension" target="_blank">X-Cart</a>, <a href="https://www.loginradius.com/loginradius-for-developers/loginRadius-cms#zencartplugin" target="_blank">Zen-Cart</a> and <a href="https://www.loginradius.com/loginradius-for-developers/loginRadius-cms#dotnetnukemodule" target="_blank">DotNetNuke</a>!
+			<?php echo $this->__('We also offer Social Plugins for') ?>
+                <a href="http://ish.re/ADDT" target="_blank">Wordpress</a>,
+                <a href="http://ish.re/8PE6" target="_blank">Joomla</a>,
+                <a href="http://ish.re/8PE9" target="_blank">Drupal</a>,
+                <a href="http://ish.re/8PED" target="_blank">vBulletin</a>,
+                <a href="http://ish.re/8PEE" target="_blank">VanillaForum</a>,
+                <a href="http://ish.re/8PEG" target="_blank">osCommerce</a>,
+                <a href="http://ish.re/8PEH" target="_blank">PrestaShop</a>,
+                <a href="http://ish.re/8PFQ" target="_blank">X-Cart</a>,
+                <a href="http://ish.re/8PFR" target="_blank">Zen-Cart</a>,
+                <a href="http://ish.re/8PFS" target="_blank">DotNetNuke</a>,
+                <a href="http://ish.re/8PFT" target="_blank">SMF</a><?php echo $this->__('and') ?>
+                <a href="http://ish.re/8PFV" target="_blank">phpBB</a> !
 		</p>
+                </br>
+            <div style="margin-top:10px">
+                <a style="text-decoration:none;margin-right:10px;" href="https://www.loginradius.com/" target="_blank">
+                    <input class="form-button" type="button" value="<?php echo $this->__('Set up my FREE account!') ?>">
+                </a>
+                <a class="loginRadiusHow" target="_blank"
+                   href="http://ish.re/ATM4">(<?php echo $this->__('How to set up an account?') ?>)</a>
+            </div>
 		</fieldset>
 		<!-- Get Updates -->			
 		<fieldset class="loginRadiusFieldset" style="width:26%; background-color: rgb(231, 255, 224); border: 1px solid rgb(191, 231, 176); padding-bottom:6px;">
@@ -29,80 +56,26 @@ class Loginradius_Sharing_Model_System_Config_Info extends Mage_Adminhtml_Block_
 			<strong>Author:</strong> LoginRadius<br/>
 			<strong>Website:</strong> <a href="https://www.loginradius.com" target="_blank">www.loginradius.com</a> <br/>
 			<strong>Community:</strong> <a href="http://community.loginradius.com" target="_blank">community.loginradius.com</a> <br/>
-			To receive updates on new features, future releases and other updates, please connect with us on
-			Facebook-
-			<div>
-				<div style="float:left">
-					<iframe rel="tooltip" scrolling="no" frameborder="0" allowtransparency="true" style="border: none; overflow: hidden; width: 46px; height: 61px; margin-right:10px" src="//www.facebook.com/plugins/like.php?app_id=194112853990900&amp;href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FLoginRadius%2F119745918110130&amp;send=false&amp;layout=box_count&amp;width=90&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=arial&amp;height=90" data-original-title="Like us on Facebook"></iframe>
-				</div>
-				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-			</div>
+			To receive updates on new features, releases, etc. Please connect to one of our social media pages
+			<div id="lr_media_pages_container">
+                    <a target="_blank" href="https://www.facebook.com/loginradius"><img
+                            src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_SKIN) . 'adminhtml/default/default/Loginradius/Sharing/images/media-pages/facebook.png'; ?>"></a>
+                    <a target="_blank" href="https://twitter.com/LoginRadius"><img
+                            src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_SKIN) . 'adminhtml/default/default/Loginradius/Sharing/images/media-pages/twitter.png'; ?>"></a>
+                    <a target="_blank" href="https://plus.google.com/+Loginradius"> <img
+                            src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_SKIN) . 'adminhtml/default/default/Loginradius/Sharing/images/media-pages/google.png'; ?>"></a>
+                    <a target="_blank" href="http://www.linkedin.com/company/loginradius"> <img
+                            src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_SKIN) . 'adminhtml/default/default/Loginradius/Sharing/images/media-pages/linkedin.png'; ?>"></a>
+                    <a target="_blank" href="https://www.youtube.com/user/LoginRadius"> <img
+                            src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_SKIN) . 'adminhtml/default/default/Loginradius/Sharing/images/media-pages/youtube.png'; ?>"></a>
+                </div>
 		</div>
 		</fieldset>
 		<div style='clear:both'></div>
-		<?php
-		$loginRadiusObject = new Loginradius_Sharing_Block_Getconfig();
-		if(trim($loginRadiusObject -> getApikey()) == ''){
-		?>
-		<div id="loginRadiusLoginForm">
-			<h4 id="loginRadiusFormTitle">Register your LoginRadius Account to change settings as per your requirements!</h4>
-			<form id="loginRadiusLRForm">
-			<table class="form-table">
-				<tbody>
-				<tr>
-					<th><label for="username">Email</label></th>
-					<td>
-						<input type="text" name="username" id="username" class="regular-text">
-					</td>
-				</tr>
-				<tr>
-					<th><label for="password">Password</label></th>
-					<td><input type="password" name="password" id="password" value="" class="regular-text"></td>
-				</tr>
-				<tr id="confirmPasswordRow">
-					<th><label for="confirm_password">Confirm Password</label></th>
-					<td><input onblur="loginRadiusConfirmPasswordValidate()" type="password" name="confirm_password" id="confirm_password" value="" class="regular-text"></td>
-				</tr>
-				<tr id="lrsiteRow">
-					<th><label for="lrsite">LoginRadius Site</label></th>
-					<td><input type="text" name="lrsite" id="lrsite" value="" class="regular-text"></td>
-				</tr>
-				<tr id="lrSiteMessageRow">
-					<th></th>
-					<td><span style="font-size:11px">(Your LoginRadius Site Name must not include periods ('.') or any other special symbols. Just use letters (A-Z), digits (0-9) or dash ( - )!)</span></td>
-				</tr>
-				<tr>
-					<td><input type="button" id="loginRadiusSubmit" class="form-button" value="Register" /></td>
-					<td><div id="loginRadiusMessage"></div></td>
-				</tr>
-				<tr>
-					<td style="width:200px">
-					<a style="text-decoration:none" id="loginRadiusToggleFormLink" href="javascript:void(0)" onclick="loginRadiusToggleForm('login')">Already have an account?</a><br/>
-					<a style="text-decoration:none" target="_blank" href="https://www.loginradius.com/login/forgotten" onclick="loginRadiusToggleForm('login')">Forgot your password?</a>
-					</td>
-				</tr>
-				</tbody>
-			</table>
-			</form>
-		</div>
-		<?php
-		}
-		?>
 		<script type="text/javascript">var islrsharing = true; var islrsocialcounter = true;</script>
 		<script type="text/javascript" src="//share.loginradius.com/Content/js/LoginRadius.js" id="lrsharescript"></script>
 		<script type="text/javascript">
 			window.onload = function(){
-				<?php
-				if(trim($loginRadiusObject -> getApikey()) == ''){
-					?>
-					$loginRadiusSharingJquery('.section-config, .entry-edit-head, .collapseable, .config, .collapseable').css('display', 'none');
-					// bind LR login/register API call to the form button
-					document.getElementById('loginRadiusSubmit').onclick = function(){
-						loginRadiusLRLogin(this);
-					};
-				<?php
-				}
-				?>
 				var sharingType = ['horizontal', 'vertical'];
 				var sharingModes = ['Sharing', 'Counter'];
 				for(var i = 0; i < sharingType.length; i++){
@@ -143,165 +116,6 @@ class Loginradius_Sharing_Model_System_Config_Info extends Mage_Adminhtml_Block_
 					document.getElementById('row_sharing_options_'+sharingType+'Sharing_'+sharingType+'SharingProvidersHidden').style.display = 'none';
 				}
 			}
-			<?php
-			if(trim($loginRadiusObject -> getApikey()) == ''){
-			?>
-			// ajax for user registration/login to LR.com. Password validation
-			function loginRadiusLRLogin(elem){
-				
-				// form validation
-				var email = $loginRadiusSharingJquery('#username').val().trim();
-				if(email == "" || $loginRadiusSharingJquery('#password').val().trim() == "" || ($loginRadiusSharingJquery('#lrsiteRow').css('display') != 'none' && $loginRadiusSharingJquery('#lrsite').val().trim() == "")){
-					$loginRadiusSharingJquery('#loginRadiusMessage').html('Please fill all the fields.').css('color', 'red');
-					return;
-				}
-				// email validation
-				var atPosition = email.indexOf("@");
-				var dotPosition = email.lastIndexOf(".");
-				if(atPosition < 1 || dotPosition < atPosition+2 || dotPosition+2>=email.length){
-					$loginRadiusSharingJquery('#loginRadiusMessage').html('Please enter a valid email address.').css('color', 'red');
-					return;
-				}
-				//password length validation
-				if($loginRadiusSharingJquery('#password').val().length < 6 || $loginRadiusSharingJquery('#password').val().length > 32 ) {
-					$loginRadiusSharingJquery('#loginRadiusMessage').html('Password length should be minimum of 6 characters and maximum 32 characters').css('color', 'red');
-					return;
-				}
-				
-				// confirm password validation
-				if($loginRadiusSharingJquery('#confirmPasswordRow').css('display') != 'none' && !loginRadiusConfirmPasswordValidate()){
-					return;
-				}
-				//Site Name validation
-				if ($loginRadiusSharingJquery('#lrsiteRow').css('display') != 'none' && $loginRadiusSharingJquery('#lrsite').val().match(/[.]/g)) {
-					$loginRadiusSharingJquery('#loginRadiusMessage').html('Symbol "." not allowed in LoginRadius Site name.').css('color', 'red');
-					return;
-				}
-				if ($loginRadiusSharingJquery('#lrsiteRow').css('display') != 'none' && $loginRadiusSharingJquery('#lrsite').val().match(/[_]/g)) {
-					$loginRadiusSharingJquery('#loginRadiusMessage').html('Symbol "_" not allowed in LoginRadius Site name.').css('color', 'red');
-					return;
-				}
-				if($loginRadiusSharingJquery('#lrsiteRow').css('display') != 'none' && $loginRadiusSharingJquery('#lrsite').val().length < 4 ) {
-					$loginRadiusSharingJquery('#loginRadiusMessage').html('Site name must be longer than three characters.').css('color', 'red');
-					return;
-				}
-				 var url = "https://" + $loginRadiusSharingJquery('#lrsite').val().trim() + ".hub.loginradius.com";
-				 var regularExpression = "^(ht|f)tp(s?)\:\/\/[0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*(:(0-9)*)*(\/?)([a-zA-Z0-9\-\.\?\,\'\/\\\+&%\$#_]*)?$";
-				if ($loginRadiusSharingJquery('#lrsiteRow').css('display') != 'none' && !url.match(regularExpression)) {
-					$loginRadiusSharingJquery('#loginRadiusMessage').html('Site Name is not valid.').css('color', 'red');
-					return;
-				}
-				// processing message
-				$loginRadiusSharingJquery('#loginRadiusMessage').html('<img width="20" height="20" src="<?php echo Mage::getDesign()->getSkinUrl('Loginradius/Sharing/images/loading_icon.gif',array('_area'=>'frontend')); ?>" style="float:left;margin-right: 5px;" /><span style="color:blue; width:auto">Please wait. This may take a few minutes...</span>');
-				// create data object
-				var dataObject = {
-				<?php
-				$adminDetails = Mage::getSingleton('admin/session')->getUser()->getData();
-				$adminName = '';
-				if(isset($adminDetails['firstname']) && $adminDetails['firstname'] != ''){
-					$adminName .= $adminDetails['firstname'];
-				}
-				if(isset($adminDetails['lastname']) && $adminDetails['lastname'] != ''){
-					$adminName .= ' ' . $adminDetails['lastname'];
-				}
-				if($adminName == ''){
-					$adminName = isset($adminDetails['username']) ? $adminDetails['username'] : '';
-				}
-				?>
-					UserName: $loginRadiusSharingJquery('#username').val().trim(),
-					password: $loginRadiusSharingJquery('#password').val().trim(),
-					<?php
-					if($adminName != ''){
-						?>
-						admin: '<?php echo $adminName; ?>'
-						<?php
-					}
-					?>
-				};
-				if($loginRadiusSharingJquery('#lrsiteRow').css('display') != 'none'){
-					dataObject.lrsite = $loginRadiusSharingJquery('#lrsite').val().trim();
-				}
-				$loginRadiusSharingJquery.ajax({
-				  type: 'POST',
-				  url: '<?php echo Mage::getBaseUrl().'sharing'; ?>',
-				  data: dataObject,
-				  dataType: 'json',
-				  success: function(data, textStatus, XMLHttpRequest){
-					if(data.status == 0){
-						// show the message
-						$loginRadiusSharingJquery('#loginRadiusMessage').html(data.message).css('color', 'red');
-					}else if(data.status == 1 && data.message == 'registration successful'){
-						document.getElementById('sharing_options_messages_appid').value = data.apikey;
-						$loginRadiusSharingJquery('#loginRadiusMessage').html('<img width="20" height="20" src="<?php echo Mage::getDesign()->getSkinUrl('Loginradius/Sharing/images/loading_icon.gif',array('_area'=>'frontend')); ?>" style="float:left;margin-right: 5px;" /><span style="color:blue; width:auto">Please wait. This may take a few minutes...</span>');
-						// save the options
-						configForm.submit();
-					}else if(data.status == 1 && data.message == 'login successful'){
-						// display the app list
-						var html = '<h3 id="loginRadiusFormTitle">Site Selection</h3><table class="form-table"><tbody><tr><th><label for="lrSites">Select a LoginRadius site</label></th><td><select id="lrSites"><option value="">--Select a Site--</option>';
-						for(var i = 0; i < data.result.length; i++){
-							html += '<option value="'+data.result[i].apikey+'">'+data.result[i].appName+'</option>';
-						}
-						html += '</select>';
-						html += '</td></tr><tr><td><input type="button" id="loginRadiusLRSiteSave" class="form-button" value="Save" /></td><td><div id="loginRadiusMessage"></div></td></tr>';
-						$loginRadiusSharingJquery('#loginRadiusLoginForm').html(html);
-						document.getElementById('loginRadiusLRSiteSave').onclick = function(){
-							loginRadiusSaveLRSite();
-						};
-					}
-				  },
-				  error: function(a, b, c){
-					alert(JSON.stringify(a, null, 4)+"\n"+b+"\n"+c)
-				  }
-				});
-			}
-			// toggle between login and registration form
-			function loginRadiusToggleForm(val){
-				if(val == 'login'){
-					document.getElementById('lrsiteRow').style.display = 'none';
-					document.getElementById('lrSiteMessageRow').style.display = 'none';
-					document.getElementById('confirmPasswordRow').style.display = 'none';
-					document.getElementById('loginRadiusToggleFormLink').innerHTML = 'New to LoginRadius, Register Now!';
-					document.getElementById('loginRadiusToggleFormLink').setAttribute('onclick', 'loginRadiusToggleForm("register")');
-					document.getElementById('loginRadiusSubmit').value = 'Login';
-					document.getElementById('loginRadiusFormTitle').innerHTML = 'Login to your LoginRadius Account to change settings as per your requirements!';
-				}else{
-					document.getElementById('lrsiteRow').style.display = 'table-row';
-					document.getElementById('lrSiteMessageRow').style.display = 'table-row';
-					document.getElementById('confirmPasswordRow').style.display = 'table-row';
-					document.getElementById('loginRadiusToggleFormLink').innerHTML = 'Already have an account?';
-					document.getElementById('loginRadiusToggleFormLink').setAttribute('onclick', 'loginRadiusToggleForm("login")');
-					document.getElementById('loginRadiusSubmit').value = 'Register';
-					document.getElementById('loginRadiusFormTitle').innerHTML = 'Register your LoginRadius Account to change settings as per your requirements!';
-				}
-				document.getElementById('loginRadiusMessage').innerHTML = '';
-			}
-			// confirm password validation
-			function loginRadiusConfirmPasswordValidate(){
-				var loginRadiusNotificationDiv = document.getElementById('loginRadiusMessage');
-				if(document.getElementById('password').value.trim() != document.getElementById('confirm_password').value.trim()){
-					loginRadiusNotificationDiv.innerHTML = 'Passwords do not match.';
-					loginRadiusNotificationDiv.style.color = 'red';
-					return false;
-				}else{
-					loginRadiusNotificationDiv.innerHTML = '';
-					return true;
-				}
-			}
-			
-			// save selected LR Site API Key
-			function loginRadiusSaveLRSite(){
-				if($loginRadiusSharingJquery('#lrSites').val().trim() == ""){
-					$loginRadiusSharingJquery('#loginRadiusMessage').html('Please select a site').css('color', 'red');
-					return;
-				}
-				document.getElementById('sharing_options_messages_appid').value = $loginRadiusSharingJquery('#lrSites').val();
-				$loginRadiusSharingJquery('#loginRadiusMessage').html('<img width="20" height="20" src="<?php echo Mage::getDesign()->getSkinUrl('Loginradius/Sharing/images/loading_icon.gif',array('_area'=>'frontend')); ?>" style="float:left;margin-right: 5px;" /><span style="color:blue; width:auto">Please wait. This may take a few minutes...</span>');
-				// save the options
-				configForm.submit();
-			}
-			<?php
-			}
-			?>
 		</script>				
 		<?php
     }

@@ -34,7 +34,7 @@
 						<appid translate="label">
 							<label>LoginRadius API Key</label>
 							<frontend_type>text</frontend_type>
-							<comment><![CDATA[Paste LoginRadius API Key here. To get the API Key, login to <a href="http://www.loginradius.com" target="_blank">LoginRadius</a>]]></comment>
+							<comment><![CDATA[You can leave it blank if you are Free Customer of LoginRadius and if you are paid customer then fill it to get the Advanced sharing features.]]></comment>
 							<sort_order>15</sort_order>
 							<show_in_default>1</show_in_default>
 							<show_in_website>1</show_in_website>
