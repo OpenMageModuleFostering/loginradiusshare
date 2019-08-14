@@ -64,6 +64,18 @@ class Loginradius_Sharing_Model_Observer extends Mage_Core_Helper_Abstract
         }
     }
 
+    public function addCustomLayoutHandle(Varien_Event_Observer $observer)
+    {
+        $controllerAction = $observer->getEvent()->getAction();
+        $layout = $observer->getEvent()->getLayout();
+        if ($controllerAction && $layout && $controllerAction instanceof Mage_Adminhtml_System_ConfigController) {
+            if ($controllerAction->getRequest()->getParam('section') == 'sharing_options') {
+                $layout->getUpdate()->addHandle('sharing_custom_handle');
+            }
+        }
+        return $this;
+    }
+
     /**
      * Function for caalling appropriate method ex. curl, fsockopen or magento default varien to call LoginRadius api.
      *

@@ -55,7 +55,7 @@ class Loginradius_Sharing_Block_Help extends Mage_Adminhtml_Block_System_Config_
             <td><a target="_blank" href="http://ish.re/AEFD">How to get LoginRadius API Key</a></td></tr>
             <tr><td><a target="_blank" href="http://ish.re/9WBZ">Magento Multisite Feature</a></td>
             <td><a target="_blank" href="http://ish.re/5P2D">LoginRadius Products</a></td></tr>
-            <tr><td><a target="_blank" href="http://ish.re/HC0B">About LoginRadius</a></td>
+            <tr><td><a target="_blank" href="http://ish.re/8PJ7">About LoginRadius</a></td>
             <td><a target="_blank" href="http://ish.re/8PFR">Social Plugins</a></td></tr>
             <tr><td><a target="_blank" href="http://ish.re/C9F7">Social SDKs</a></td></tr>';
 

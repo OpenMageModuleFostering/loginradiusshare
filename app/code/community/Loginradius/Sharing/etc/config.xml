@@ -27,7 +27,7 @@
     </default>
     <modules>
         <Loginradius_Sharing>
-            <version>1.1.0</version>
+            <version>2.1.0</version>
         </Loginradius_Sharing>
     </modules>
     <frontend>
@@ -68,6 +68,7 @@
             </sharing>
         </routers>
     </admin>
+
     <adminhtml>
         <acl>
             <resources>
@@ -120,6 +121,16 @@
                     </sharing>
                 </observers>
             </model_config_data_save_before>
+        </events>
+        <events>
+            <controller_action_layout_load_before>
+                <observers>
+                    <sharing_observer>
+                        <class>sharing/Observer</class>
+                        <method>addCustomLayoutHandle</method>
+                    </sharing_observer>
+                </observers>
+            </controller_action_layout_load_before>
         </events>
     </adminhtml>
     <global>
