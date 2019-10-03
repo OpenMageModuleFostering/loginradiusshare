@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/LoginRadiusShare",
+    "name": "OpenMageModuleFostering\/LoginRadiusShare",
     "type": "magento-module",
     "license": "GNU-General-Public-License-(GPL)",
     "homepage": "",
     "description": "Social Sharing for Magento",
     "authors": [
-    {
-        "name": "Social9 Team",
-        "email": "developers@social9.com"
-    }
-],
+        {
+            "name": "Social9 Team",
+            "email": "developers@social9.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
